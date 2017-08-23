@@ -128,7 +128,7 @@ TWTCOMSCRIPT;
             var submit = 0;
             var input = document.querySelector('[name^="twt-plugin-settings[twt-site-id]"]');
             if (input) {
-              input.setAttribute('pattern','[a-f0-9]{16}_[a-f0-9]{1,7}([ ,|][-.a-fA-F0-9]+)?');
+              input.setAttribute('pattern','[a-f0-9]{16}_[a-f0-9]{1,7}([ ,|][-.a-zA-Z0-9]+\.firebaseapp\.com)?');
             }
           },50);
         })();
