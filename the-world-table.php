@@ -218,6 +218,12 @@ TWTSCRIPT;
       wp_enqueue_script('twt-the-world-table', "https://${siteInfo[1]}/the-world-table.js", array(), null, true);
       wp_enqueue_style('twt-the-world-table-css', plugin_dir_url( __FILE__ ) . 'css/the-world-table.css');
       echo "<meta name='twt-site-id' content='${siteInfo[0]}'>";
+      if (is_singular()) {
+        $articleId = $this->get_article_id();
+        if ($articleId) {
+          echo "<meta name='twt-article-id' content='$articleId'>";
+        }
+      }
     }
   }
 
