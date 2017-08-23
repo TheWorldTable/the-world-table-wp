@@ -10,3 +10,8 @@
 .twt-action-row {
   margin: 10px 0;
 }
+
+.twt-count-container {
+  float: right;
+  width: auto;
+}
